@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:800,900");
+html, body {
+  height: 100%;
+}
+
+body {
+  
+  font-family: Alegreya Sans, sans-serif;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transform: translate3d(25px, -25px, 0);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+nav.open {
+  transform: translate3d(0, 0, 0);
+}
+nav.top-right {
+  top: -140px;
+  right: -140px;
+}
+
+.disc {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font: 25px Alegreya Sans, sans-serif;
+  line-height: 40px;
+  padding-top: 10px;
+  border-radius: 250px;
+  transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+  pointer-events: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
+}
+.disc div {
+  transform: rotate(180deg);
+}
+.open .disc {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+
+.l3 {
+  top: 100px;
+  left: 100px;
+  right: 100px;
+  bottom: 100px;
+  background: #00AB08;
+  transition-delay: 0.2s;
+}
+.open .l3 {
+  transition-delay: 0.2s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+.open .l3:hover {
+  background: shade(#00AB08, 90%);
+  color: #08820e;
+  transition-delay: 0s;
+}
+.open .l3:active {
+  background: shade(#00AB08, 50%);
+  color: #00AB08;
+}
+.open .l3.toggle {
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l4 {
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  bottom: 150px;
+  background: #a6f1a6;
+  transition-delay: 0.3s;
+}
+.open .l4 {
+  transition-delay: 0.3s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+.open .l4:hover {
+  background: shade(#a6f1a6, 90%);
+  color: #ffffff;
+  transition-delay: 0s;
+}
+.open .l4:active {
+  background: shade(#a6f1a6, 50%);
+  color: #a6f1a6;
+}
+.open .l4.toggle {
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l5 {
+  top: 200px;
+  left: 200px;
+  right: 200px;
+  bottom: 200px;
+  background: #01f812;
+  transition-delay: 0.4s;
+}
+.open .l5 {
+  transition-delay: 0.4s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+.open .l5:hover {
+  background: shade(#01f812, 90%);
+  color: #339207;
+  transition-delay: 0s;
+}
+.open .l5:active {
+  background: shade(#01f812, 50%);
+  color: #01f812;
+}
+.open .l5.toggle {
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.toggle {
+  line-height: 100px;
+  padding: 0;
+  width: 100px;
+  background: green;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+.open .toggle {
+  transform: rotate3d(0, 0, 1, 0deg);
+}
+.toggle:hover {
+  background: shade(green, 90%);
+  text-decoration: underline;
+}
+.toggle:active {
+  background: shade(green, 50%);
+  color: rgba(255, 215, 0, 0.5);
+  transform: scale(0.9);
+  transition-duration: 0s;
+}
