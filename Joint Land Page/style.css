@@ -58,7 +58,7 @@ nav.top-right {
   left: 100px;
   right: 100px;
   bottom: 100px;
-  background: #00AB08;
+  background: #000000;
   transition-delay: 0.2s;
 }
 .open .l3 {
@@ -84,7 +84,7 @@ nav.top-right {
   left: 150px;
   right: 150px;
   bottom: 150px;
-  background: #a6f1a6;
+  background: #ffffff;
   transition-delay: 0.3s;
 }
 .open .l4 {
@@ -110,7 +110,7 @@ nav.top-right {
   left: 200px;
   right: 200px;
   bottom: 200px;
-  background: #01f812;
+  background: #000000;
   transition-delay: 0.4s;
 }
 .open .l5 {
